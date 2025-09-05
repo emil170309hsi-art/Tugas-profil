@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profilku - Muhammad Emil Fikar</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #f0f4ff, #e3ffe7);
+      color: #333;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+    header {
+      text-align: center;
+      padding: 2rem;
+      background: #4f46e5;
+      color: #fff;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      animation: fadeInDown 1s ease;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      margin-top: .5rem;
+      font-size: 1.2rem;
+    }
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background: #6366f1;
+      margin: 0;
+      padding: 1rem;
+      list-style: none;
+      animation: fadeIn 1.2s ease;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    nav ul li a:hover {
+      color: #facc15;
+      transform: scale(1.1);
+    }
+    section {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease;
+    }
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    h2 {
+      color: #4f46e5;
+      margin-bottom: 1rem;
+    }
+    ul li, ol li {
+      margin-bottom: .5rem;
+    }
+    blockquote {
+      font-style: italic;
+      border-left: 5px solid #4f46e5;
+      padding-left: 1rem;
+      color: #555;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+    table th, table td {
+      border: 1px solid #ddd;
+      padding: .8rem;
+      text-align: center;
+    }
+    table th {
+      background: #6366f1;
+      color: #fff;
+    }
+    table tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+    details {
+      margin-top: 1rem;
+      padding: 1rem;
+      background: #f9f9f9;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+    details[open] {
+      background: #e0e7ff;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #4f46e5;
+      color: #fff;
+      margin-top: 2rem;
+      animation: fadeInUp 1s ease;
+    }
+    footer small {
+      display: block;
+      margin-top: .5rem;
+      color: #f3f4f6;
+    }
+
+    /* Animations */
+    @keyframes fadeInDown {
+      from {opacity: 0; transform: translateY(-30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1><i class="fa-solid fa-user"></i> Muhammad Emil Fikar</h1>
+    <p>Siswa dengan cita-cita tinggi 🚀</p>
+  </header>
+
+  <!-- Navigasi -->
+  <nav>
+    <ul>
+      <li><a href="#tentang"><i class="fa-solid fa-id-card"></i> Tentang</a></li>
+      <li><a href="#hobi"><i class="fa-solid fa-gamepad"></i> Hobi</a></li>
+      <li><a href="#prestasi"><i class="fa-solid fa-trophy"></i> Prestasi</a></li>
+    </ul>
+  </nav>
+
+  <!-- Tentang -->
+  <section id="tentang">
+    <h2>Tentang saya</h2>
+    <p>Halo, nama saya <strong>Muhammad Emil Fikar</strong>, siswa kelas <strong>11</strong> di <em>SMA IT HSI</em>. Saya sangat suka <mark>teknologi</mark> dan selalu bersemangat untuk belajar hal-hal baru.</p>
+  </section>
+
+  <!-- Quote -->
+  <section>
+    <h2>Quote inspiratif</h2>
+    <blockquote>
+      "Live as if you were to die tomorrow. Learn as if you were to live forever"
+    </blockquote>
+    <p><em>"Hiduplah seolah-olah kamu akan mati besok. Belajarlah seolah-olah kamu akan hidup selamanya."</em></p>
+  </section>
+
+  <!-- Hobi -->
+  <section id="hobi">
+    <h2>Hobi dan minat</h2>
+    <ul>
+      <li><i class="fa-solid fa-code"></i> Programming</li>
+      <li><i class="fa-solid fa-book"></i> Membaca</li>
+      <li><i class="fa-solid fa-lightbulb"></i> Belajar</li>
+    </ul>
+  </section>
+
+  <!-- Prestasi -->
+  <section id="prestasi">
+    <h2>Prestasi</h2>
+    <h3>Akademik</h3>
+    <ol>
+      <li><i class="fa-solid fa-medal"></i> <strong>Juara 7</strong> Olimpiade Bahasa Arab</li>
+    </ol>
+  </section>
+
+  <!-- Jadwal Belajar -->
+  <section>
+    <h2>Jadwal Belajar</h2>
+    <table>
+      <caption>Jadwal belajar di sekolah</caption>
+      <thead>
+        <tr>
+          <th>Waktu</th>
+          <th>Senin</th>
+          <th>Selasa</th>
+          <th>Rabu</th>
+          <th>Kamis</th>
+          <th>Jumat</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><time datetime="13:00">13:00-15:00</time></td>
+          <td>HTML</td>
+          <td>CSS</td>
+          <td>HTML</td>
+          <td>CSS</td>
+          <td>HTML</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Timeline -->
+  <section>
+    <h2>Timeline Belajar HTML & CSS</h2>
+    <ul>
+      <li>📌 <time datetime="2025-08-07">7 Agustus 2025</time> - Mulai belajar HTML</li>
+      <li>📌 <time datetime="2025-08-15">15 Agustus 2025</time> - Mulai belajar CSS</li>
+      <li>📌 <time datetime="2025-09-01">1 September 2025</time> - Mulai paham HTML dan CSS</li>
+    </ul>
+  </section>
+
+  <!-- FAQ -->
+  <section>
+    <h2>FAQ</h2>
+    <details>
+      <summary>Bagaimana saya belajar HTML?</summary>
+      <p>Saya belajar lewat:</p>
+      <ul>
+        <li>Tutorial dari guru langsung</li>
+        <li>Video di YouTube</li>
+        <li>Praktek langsung</li>
+      </ul>
+    </details>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Halaman ini dibuat dengan <mark><em>kesabaran</em></mark> 💡</p>
+    <small>Last updated: <time datetime="2025-09-04">4 September 2025</time></small>
+  </footer>
+
+  <script>
+    // Animasi saat scroll
+    const sections = document.querySelectorAll('section');
+    const showOnScroll = () => {
+      const triggerBottom = window.innerHeight * 0.85;
+      sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        if(sectionTop < triggerBottom) {
+          section.classList.add('visible');
+        }
+      });
+    };
+    window.addEventListener('scroll', showOnScroll);
+    showOnScroll();
+  </script>
+</body>
+</html>

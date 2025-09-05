@@ -1,0 +1,92 @@
+
+.heder {
+  background-color: rgb(0, 128, 255);
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  list-style: none;
+}
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav li{
+    list-style-type: none;
+    display: inline;
+    gap: 20px;
+    
+}
+.nav li a{
+    text-decoration: none;
+    color: black;
+    background-color:rgb(255, 235, 51);
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+
+.main {
+  display: grid;
+  grid-template-areas: "satu aside " "dua aside" "tiga aside";
+  flex: 1;
+  padding: 30px;
+  border-radius: 5px;
+  text-align: center;
+  row-gap: 30px;
+  column-gap: 30px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  max-width: 60%;
+  margin: auto;
+}
+.s1 {
+  background-color: #838282;
+  text-align: center;
+  grid-area: satu;
+  border-radius: 10px;
+  box-shadow: 0 9px 6px rgba(0, 0, 0, 0.240);
+}
+.s2 {
+  background-color: #838282;
+  text-align: center;
+  grid-area: dua;
+  border-radius: 10px;
+  box-shadow: 0 9px 6px rgba(0, 0, 0, 0.240);
+}
+.s3 {
+  background-color: #838282;
+  text-align: center;
+  grid-area: tiga;
+  border-radius: 10px;
+  box-shadow: 0 9px 6px rgba(0, 0, 0, 0.24);
+}
+.aside {
+  background-color: rgb(182, 190, 190);
+  grid-area: aside;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 3px 9px 6px rgba(0, 0, 0, 0.24);
+}
+.aside-menu{
+  background-color: rgb(214, 211, 38);
+  padding: 10px;
+  margin: 30px;
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 7px 4px rgba(0, 0, 0, 0.240);
+}
+.aside-menu:hover{
+  background-color: yellow;
+}
+footer {
+  background-color: #928b8b;
+  padding: 20px;
+}
+.nav li a:hover{
+  background-color: rgb(197, 179, 15);
+}
