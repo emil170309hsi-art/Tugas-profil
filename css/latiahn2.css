@@ -1,0 +1,45 @@
+.container{
+    background-color: rgb(12, 87, 173);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+.container > a{
+    background-color: rgb(97, 97, 102);
+    padding: 7px;
+    border-radius: 10px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.section{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+   
+}
+.section ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin-right: 20px;
+}
+.section nav a{
+    color: rgb(255, 0, 0);
+    background-color: rgb(101, 252, 252);
+    padding: 7px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.section div {
+    display: flex;
+    gap: 20px;
+}
+.section div a{
+    color: black;
+    background-color: skyblue;
+    padding: 7px;
+    border-radius: 10px;
+    text-decoration: none;
+}
